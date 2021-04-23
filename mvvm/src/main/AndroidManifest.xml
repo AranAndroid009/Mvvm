@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aranandroid.mvvm">
+    <application>
+        <service android:name=".live.ForgroundService" />
+        <service android:name=".live.ForgroundService$InnnerService" />
+    </application>
+</manifest>
