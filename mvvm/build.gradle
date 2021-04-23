@@ -1,7 +1,10 @@
 plugins {
     id 'com.android.library'
+    id 'com.github.dcendents.android-maven'
     id 'kotlin-android'
 }
+
+group = 'com.github.AranAndroid009'
 
 android {
     compileSdkVersion 30
