@@ -11,7 +11,7 @@ import com.aranandroid.mvvm.ui.area.ChooseAreaFragment
 
 class MainActivity : BaseActivity<MainViewModel, ActivityMainBinding>(R.layout.activity_main) {
 
-    
+    //测试
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         if (viewModel.isWeatherCached()) {
