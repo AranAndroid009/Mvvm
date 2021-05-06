@@ -22,5 +22,4 @@ class MainActivity : BaseActivity<MainViewModel, ActivityMainBinding>(R.layout.a
             supportFragmentManager.beginTransaction().replace(binding.container.id, ChooseAreaFragment()).commit()
         }
     }
-
 }
