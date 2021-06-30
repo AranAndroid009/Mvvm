@@ -1,6 +1,43 @@
 # 酷欧天气Jetpack版
 酷欧天气的Jetpack版本实现，采用了MVVM架构。
 
+使用
+build.gradle（主项目）：maven { url 'https://jitpack.io' }
+build.gradle（app）：implementation 'com.github.AranAndroid009:Mvvm:1.0.1'
+网络初始化用：继承 MvvmApplication 然后 ServiceCreator.init("http://guolin.tech/")
+数据库使用：assets文件下创建xml
+案例：<litepal>
+    <dbname value="passive" />
+    <version value="4" />
+    <list>
+        <mapping class="com.winspread.passive5g.data.model.UserBean" />
+    </list>
+    <storage value="external" />
+   </litepal>
+mvvm三部曲：
+m:class ExampleModel : BaseViewModel()
+v:<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.view.View"/>
+        <variable name="viewModel" type="com.winspread.passive5g.ui.example.ExampleModel" />
+    </data>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </View>
+</layout>
+mv:class ExampleActivity :
+    BaseActivity<ExampleModel, ActivityExampleBinding>(R.layout.activity_example) {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        // 必填
+        binding.viewModel = viewModel
+        binding.lifecycleOwner = this
+    }
+}
+
+
 这里我先给出一张酷欧天气Jetpack版的架构设计图，这张图是模仿Google Codelabs的Sunshine项目画出来的。拥有良好架构设计的项目都是可以用简洁清晰的架构图表示出来的，而一个杂乱无章没有架构设计的项目则很难用架构图表示出来。
 
 <img src="https://raw.githubusercontent.com/guolindev/coolweatherjetpack/master/images/architecture.jpg" width="750" />
