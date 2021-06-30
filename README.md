@@ -56,8 +56,9 @@ class ExampleActivity :
     BaseActivity<ExampleModel, ActivityExampleBinding>(R.layout.activity_example) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // 必填
+        // 必写
         binding.viewModel = viewModel
+        // 必写
         binding.lifecycleOwner = this
     }
 }
