@@ -2,20 +2,28 @@
 酷欧天气的Jetpack版本实现，采用了MVVM架构。
 
 使用
+
 build.gradle（主项目）：maven { url 'https://jitpack.io' }
+
 build.gradle（app）：implementation 'com.github.AranAndroid009:Mvvm:1.0.1'
+
 网络初始化用：继承 MvvmApplication 然后 ServiceCreator.init("http://guolin.tech/")
+
 数据库使用：assets文件下创建xml
+
 案例：<litepal>
     <dbname value="passive" />
     <version value="4" />
     <list>
-        <mapping class="com.winspread.passive5g.data.model.UserBean" />
+        <mapping class="com.winspread.passive5g.data.model.UserBean" />   
     </list>
     <storage value="external" />
    </litepal>
+   
 mvvm三部曲：
+
 m:class ExampleModel : BaseViewModel()
+
 v:<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:bind="http://schemas.android.com/apk/res-auto">
     <data>
@@ -27,6 +35,7 @@ v:<layout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_height="match_parent">
     </View>
 </layout>
+
 mv:class ExampleActivity :
     BaseActivity<ExampleModel, ActivityExampleBinding>(R.layout.activity_example) {
     override fun onCreate(savedInstanceState: Bundle?) {
