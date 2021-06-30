@@ -1,7 +1,7 @@
 # 酷欧天气Jetpack版
 酷欧天气的Jetpack版本实现，采用了MVVM架构。
 
-## 使用
+## mvvm使用（mvvm被封装成框架包）
 
 *build.gradle（主项目）：
 
