@@ -6,7 +6,7 @@ import androidx.lifecycle.viewModelScope
 import com.aranandroid.mvvm.BaseApplication
 import com.aranandroid.mvvm.data.WeatherRepository
 import com.aranandroid.mvvm.data.model.weather.Weather
-import com.aranandroid.mvvm.base.vm.BaseViewModel
+import com.aranandroid.mvvm.base.m.BaseViewModel
 import com.aranandroid.mvvm.data.db.ExampleDatabase
 import com.aranandroid.mvvm.data.network.ExampleNetwork
 import kotlinx.coroutines.launch

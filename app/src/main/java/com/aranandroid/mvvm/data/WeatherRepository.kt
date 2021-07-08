@@ -3,7 +3,7 @@ package com.aranandroid.mvvm.data
 import com.aranandroid.mvvm.data.db.WeatherDao
 import com.aranandroid.mvvm.data.model.weather.Weather
 import com.aranandroid.mvvm.data.network.ExampleNetwork
-import com.aranandroid.mvvm.base.m.BaseRepository
+import com.aranandroid.mvvm.base.factory.BaseRepository
 import com.aranandroid.mvvm.ui.weather.WeatherViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

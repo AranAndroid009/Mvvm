@@ -1,10 +1,10 @@
-package com.aranandroid.mvvm.base.v
+package com.aranandroid.mvvm.base.vm
 
 
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProviders
-import com.aranandroid.mvvm.base.vm.BaseViewModel
+import com.aranandroid.mvvm.base.m.BaseViewModel
 import java.lang.reflect.ParameterizedType
 import java.lang.reflect.Type
 

@@ -4,7 +4,7 @@ import android.os.Bundle
 import com.aranandroid.mvvm.R
 import com.aranandroid.mvvm.ui.weather.WeatherActivity
 import android.content.Intent
-import com.aranandroid.mvvm.base.v.BaseActivity
+import com.aranandroid.mvvm.base.vm.BaseActivity
 import com.aranandroid.mvvm.databinding.ActivityMainBinding
 import com.aranandroid.mvvm.ui.area.ChooseAreaFragment
 

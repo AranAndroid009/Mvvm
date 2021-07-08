@@ -13,7 +13,7 @@ import com.aranandroid.mvvm.data.model.place.Province
 import com.aranandroid.mvvm.ui.area.ChooseAreaFragment.Companion.LEVEL_CITY
 import com.aranandroid.mvvm.ui.area.ChooseAreaFragment.Companion.LEVEL_COUNTY
 import com.aranandroid.mvvm.ui.area.ChooseAreaFragment.Companion.LEVEL_PROVINCE
-import com.aranandroid.mvvm.base.vm.BaseViewModel
+import com.aranandroid.mvvm.base.m.BaseViewModel
 import com.aranandroid.mvvm.data.db.ExampleDatabase
 import com.aranandroid.mvvm.data.network.ExampleNetwork
 import kotlinx.coroutines.launch

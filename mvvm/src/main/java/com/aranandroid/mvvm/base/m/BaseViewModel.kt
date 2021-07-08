@@ -1,4 +1,4 @@
-package com.aranandroid.mvvm.base.vm
+package com.aranandroid.mvvm.base.m
 
 import androidx.lifecycle.ViewModel
 
