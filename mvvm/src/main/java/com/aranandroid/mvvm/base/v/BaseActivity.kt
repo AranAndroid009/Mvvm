@@ -9,7 +9,7 @@ import java.lang.reflect.ParameterizedType
 import java.lang.reflect.Type
 
 
-open class BaseActivity<VM : BaseViewModel,ViewDataBinding : androidx.databinding.ViewDataBinding?>(
+open class BaseActivity<VM : BaseViewModel, ViewDataBinding : androidx.databinding.ViewDataBinding?>(
     layoutId: Int
 ) : AppCompatActivity() {
     val viewModel by lazy {
@@ -23,6 +23,8 @@ open class BaseActivity<VM : BaseViewModel,ViewDataBinding : androidx.databindin
             layoutId
         )
     }
+
+
 
     fun getClass(): Type? {
         return (javaClass.genericSuperclass as ParameterizedType).actualTypeArguments[0] as Class<VM?>

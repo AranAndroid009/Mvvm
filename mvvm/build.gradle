@@ -4,6 +4,7 @@ plugins {
     id 'kotlin-android'
 }
 
+
 group = 'com.github.AranAndroid009'
 
 android {
@@ -59,5 +60,6 @@ dependencies {
     api "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0-alpha03"
 
     api 'org.litepal.android:kotlin:3.0.0'
+    api 'com.permissionx.guolindev:permissionx:1.4.0'
 
 }

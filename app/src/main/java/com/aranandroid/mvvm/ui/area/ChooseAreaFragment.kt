@@ -14,8 +14,9 @@ import com.aranandroid.mvvm.ui.weather.WeatherActivity
 import kotlinx.android.synthetic.main.activity_weather.*
 import kotlinx.android.synthetic.main.choose_area.*
 
-class ChooseAreaFragment : BaseFragment<ChooseAreaViewModel,ChooseAreaBindingImpl>(R.layout.choose_area) {
-     private var progressDialog: ProgressDialog? = null
+class ChooseAreaFragment :
+    BaseFragment<ChooseAreaViewModel, ChooseAreaBindingImpl>(R.layout.choose_area) {
+    private var progressDialog: ProgressDialog? = null
     private lateinit var adapter: ArrayAdapter<String>
 
 

@@ -15,7 +15,7 @@ object BaseExecutors {
 
     class MainThreadExecutor : Executor {
         val handler = Handler(Looper.getMainLooper())
-        override fun execute(command: Runnable?) {
+        override fun execute(command: Runnable) {
             handler.post(command)
         }
     }
