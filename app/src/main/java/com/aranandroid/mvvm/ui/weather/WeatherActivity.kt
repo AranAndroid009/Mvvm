@@ -7,7 +7,7 @@ import android.view.View
 import androidx.core.view.GravityCompat
 import com.aranandroid.mvvm.R
 import com.aranandroid.mvvm.databinding.ActivityWeatherBinding
-import com.aranandroid.mvvm.base.v.BaseActivity
+import com.aranandroid.mvvm.base.vm.BaseActivity
 import kotlinx.android.synthetic.main.activity_weather.*
 import kotlinx.android.synthetic.main.title.*
 

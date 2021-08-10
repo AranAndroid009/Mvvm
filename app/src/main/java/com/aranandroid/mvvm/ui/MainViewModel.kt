@@ -1,6 +1,6 @@
 package com.aranandroid.mvvm.ui
 
-import com.aranandroid.mvvm.base.vm.BaseViewModel
+import com.aranandroid.mvvm.base.m.BaseViewModel
 import com.aranandroid.mvvm.data.WeatherRepository
 import com.aranandroid.mvvm.data.db.ExampleDatabase
 import com.aranandroid.mvvm.data.network.ExampleNetwork

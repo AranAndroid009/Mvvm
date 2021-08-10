@@ -9,7 +9,7 @@ import androidx.lifecycle.Observer
 import com.aranandroid.mvvm.R
 import com.aranandroid.mvvm.databinding.ChooseAreaBindingImpl
 import com.aranandroid.mvvm.ui.MainActivity
-import com.aranandroid.mvvm.base.v.BaseFragment
+import com.aranandroid.mvvm.base.vm.BaseFragment
 import com.aranandroid.mvvm.ui.weather.WeatherActivity
 import kotlinx.android.synthetic.main.activity_weather.*
 import kotlinx.android.synthetic.main.choose_area.*
