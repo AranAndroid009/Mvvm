@@ -62,6 +62,12 @@ class ExampleActivity :
         binding.lifecycleOwner = this
     }
 }
+
+注意：
+app的build.gradle中android {}里边
+dataBinding {
+        enabled true
+    }
 ```
 
 这里我先给出一张酷欧天气Jetpack版的架构设计图，这张图是模仿Google Codelabs的Sunshine项目画出来的。拥有良好架构设计的项目都是可以用简洁清晰的架构图表示出来的，而一个杂乱无章没有架构设计的项目则很难用架构图表示出来。
